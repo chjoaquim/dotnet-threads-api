@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../build/poc_carriers_threads.props" />
+</Project>
