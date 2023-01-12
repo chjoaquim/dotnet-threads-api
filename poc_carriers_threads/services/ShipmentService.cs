@@ -28,7 +28,7 @@ namespace poc_carriers_threads.services
                 var shipmentIDs = response?.Shipments.ConvertAll(s => s.ID.ToString());
                 if (shipmentIDs == null) {                   
                     return new ShipmentsResponse();
-                }
+                }                
 
                 ShipmentsResponse shipmentsResponse = new ShipmentsResponse();
                 shipmentsResponse.Descriptions = new List<string>();
@@ -41,7 +41,7 @@ namespace poc_carriers_threads.services
                     var description = shipment?.Package?.Items?.FirstOrDefault()?.Description;
                     bag.Add($"Shipment ID: {id} - Description: {description}");
                     
-                }, maxDegreeOfParallelism: 6);
+                }, maxDegreeOfParallelism: 10);
                 
                 shipmentsResponse.Descriptions.AddRange(bag);
                 return shipmentsResponse;
@@ -52,7 +52,6 @@ namespace poc_carriers_threads.services
                 throw;
             }
         }
-
 
         public async Task<Shipment> GetShipment(string routeID, string token)
         {            

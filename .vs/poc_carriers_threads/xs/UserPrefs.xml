@@ -1,10 +1,14 @@
 ﻿<Properties StartupConfiguration="{5B98E270-F071-44AF-89E3-ABC2EDE41DD8}|https">
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workbench ActiveDocument="poc_carriers_threads/Clients/MeliClient.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="poc_carriers_threads/services/ShipmentService.cs">
     <Files>
-      <File FileName="poc_carriers_threads/Domain/Models/ShipmentsResponse.cs" Line="1" Column="1" />
-      <File FileName="poc_carriers_threads/services/ShipmentService.cs" Line="1" Column="1" />
-      <File FileName="poc_carriers_threads/Clients/MeliClient.cs" Line="14" Column="46" />
+      <File FileName="poc_carriers_threads/services/ShipmentService.cs" Line="36" Column="16" />
+      <File FileName="poc_carriers_threads/Clients/IMeliClient.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -12,7 +16,6 @@
           <Node name="poc_carriers_threads" expanded="True">
             <Node name="poc_carriers_threads" expanded="True">
               <Node name="Clients" expanded="True" />
-              <Node name="Domain" expanded="True" />
               <Node name="services" expanded="True" />
             </Node>
           </Node>
@@ -28,10 +31,5 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.ItemProperties.poc__carriers__threads PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MultiItemStartupConfigurations />
 </Properties>
